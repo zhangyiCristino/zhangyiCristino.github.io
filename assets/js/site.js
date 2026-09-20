@@ -12,25 +12,23 @@ const NAV = [
 /* Paper titles and venues stay in English across all languages (academic norm).
    fig: DOI slug -> auto-mounts assets/figures/<slug>.png when present. */
 const PUBS = [
-  { g: "first", t: "Optimizing Deployment Processes and Control Strategies for Marine Submerged Buoy System: A Computational Approach", v: "Ocean Engineering 329, 121158", y: "2025", d: "10.1016/j.oceaneng.2025.121158", a: "Yi Zhang, Bowen Zhao, Dapeng Zhang*, Yining Zhang, Zhengjie Liang, Yifan Xie, Keqiang Zhu", n: "JCR Q1 · IF 5.5", closed: true },
-  { g: "first", t: "Dynamic Configuration Simulation of Multi-branches Towed Array System", v: "Marine Structures 103, 103819", y: "2025", d: "10.1016/j.marstruc.2025.103819", a: "Yi Zhang, Dapeng Zhang*, Yifan Xie, Yining Zhang, Zhengjie Liang, Keqiang Zhu, Shutian Zhang", n: "JCR Q1 · IF 5.1", closed: true },
-  { g: "first", t: "Exploring Subsea Dynamics: A Comprehensive Review of Underwater Pipelines and Cables", v: "Physics of Fluids 36, 101301", y: "2024", d: "10.1063/5.0231898", a: "Dapeng Zhang (Supervisor), Yi Zhang, Bowen Zhao*, Yunsheng Ma, Kaixi Si", n: "JCR Q1 · IF 4.3 · 37 citations · supervisor listed first; author is first student author", closed: true },
-  { g: "first", t: "Review of Challenges and Opportunities in Turbulence Modeling: A Comparative Analysis of Data-Driven Machine Learning Approaches", v: "J. Marine Science and Engineering 11(7), 1440", y: "2023", d: "10.3390/jmse11071440", a: "Yi Zhang, Dapeng Zhang*, Haoyu Jiang", n: "JCR Q1 · IF 2.7 · 91 citations" },
-  { g: "first", t: "A Review of Artificial Intelligence-Based Optimization Applications in Traditional Active Maritime Collision Avoidance", v: "Sustainability 15(18), 13384", y: "2023", d: "10.3390/su151813384", a: "Yi Zhang, Dapeng Zhang*, Haoyu Jiang", n: "JCR Q2 · IF 3.3 · 30 citations" },
-  { g: "first", t: "A Review of Offshore Wind and Wave Installations in Some Areas with an Eye towards Generating Economic Benefits and Offering Commercial Inspiration", v: "Sustainability 15(10), 8429", y: "2023", d: "10.3390/su15108429", a: "Yi Zhang, Dapeng Zhang*, Haoyu Jiang", n: "JCR Q2 · IF 3.3 · 22 citations" },
-
-  { g: "prep", t: "Decision-Calibrated Neural Operator Forecasting for Post-Splashdown Recovery under Partial Observability and Physics Mismatch", v: "Engineering Applications of Artificial Intelligence", y: "under review", d: "", a: "Dapeng Zhang, Yi Zhang, Sixing Guo, Yuting Li, Kexin Xie, Yuxin Jiang", n: "CAS Q1 top · IF 9" },
-  { g: "prep", t: "Probabilistic Identification of Transient Thermal Loads on Offshore Rocket Launch Decks Using Physics-Informed Neural Networks and Conditional Flow Matching", v: "Int. Communications in Heat and Mass Transfer", y: "under review", d: "", a: "Dapeng Zhang, Yi Zhang, Sixing Guo, Yuting Li, Kexin Xie, Yuxin Jiang", n: "CAS Q2 · IF 6.2" },
-
-  { g: "co", t: "Research on Intelligent Monitoring of Offshore Structure Damage Through the Integration of Multimodal Sensing and Edge Computing", v: "Engineering Proceedings, 12th Int. Electronic Conference on Sensors and Applications", y: "2025", d: "10.3390/ECSA-12-26605", a: "Keqi Yang, Kefan Yang, Shengqing Zeng, Yi Zhang, Dapeng Zhang*", n: "Scopus-indexed conference" },
-  { g: "co", t: "From Multi-Field Coupling Behaviors to Self-Powered Monitoring: Triboelectric Nanogenerator Arrays for Deep-Sea Large-Scale Cages", v: "J. Marine Science and Engineering 13(11), 2042", y: "2025", d: "10.3390/jmse13112042", a: "Kefan Yang, Shengqing Zeng, Keqi Yang, Dapeng Zhang*, Yi Zhang", n: "JCR Q1" },
-  { g: "co", t: "Study on Dynamic Characteristics and Fracture Failure of Rigid Truss Trawl System During Towing Process", v: "J. Marine Science and Engineering 13(3), 586", y: "2025", d: "10.3390/jmse13030586", a: "Dapeng Zhang, Bowen Zhao*, Yi Zhang, Keqiang Zhu, Jin Yan", n: "JCR Q1" },
-  { g: "co", t: "Advances in Dynamic Positioning Offshore Platform-Riser Rigid-Flexible Multi-Body Systems", v: "Chinese Journal of Applied Mechanics", y: "2024", d: "10.1176/j.issn.1000-4939.2025.02.001", a: "Dapeng Zhang, Yong Bai*, Yi Zhang, Jin Yan, Yining Zhang, Zongduo Wu", n: "CSCD · in Chinese · corresponding author is an Academician of the Norwegian Academy of Technical Sciences", closed: true },
-  { g: "co", t: "A Comprehensive Review of an Underwater Towing Cable Array: Dynamic Characteristics During the Outspread Process", v: "J. Marine Science and Engineering 12(10), 1880", y: "2024", d: "10.3390/jmse12101880", a: "Dapeng Zhang, Yangyang Luo*, Yi Zhang, Yunsheng Ma, Keqiang Zhu, Shengqin Zeng", n: "JCR Q1 · 4 citations" },
-  { g: "co", t: "Marine Equipment Siting Using Machine-Learning-Based Ocean Remote Sensing Data: Current Status and Future Prospects", v: "Sustainability 16(20), 8889", y: "2024", d: "10.3390/su16208889", a: "Dapeng Zhang, Yunsheng Ma, Huilin Zhang*, Yi Zhang", n: "JCR Q2 · 7 citations" },
-  { g: "co", t: "Numerical Simulation of Hydrodynamics of Ocean-Observation-Used Remotely Operated Vehicle", v: "Frontiers in Marine Science 11, 1357144", y: "2024", d: "10.3389/fmars.2024.1357144", a: "Dapeng Zhang, Bowen Zhao*, Yi Zhang, Nan Zhou", n: "JCR Q1 · IF 2.2 · 17 citations" },
-  { g: "co", t: "Influence of Different Static Equilibrium Calculation Methods on the Dynamic Response of Marine Cables during the Releasing Process: Review and a Case Study", v: "J. Marine Science and Engineering 11(4), 764", y: "2023", d: "10.3390/jmse11040764", a: "Dapeng Zhang, Bowen Zhao*, Jiyuan Sun, Yi Zhang, Keqiang Zhu, Haoyu Jiang", n: "JCR Q1 · 6 citations" },
-  { g: "co", t: "Research on Improving the Efficiency of Aquaculture Using Self-Powered Triboelectric Nanogenerators and Microfluidic Technology", v: "5th International Online Conference on Nanomaterials (poster)", y: "2025", d: "", a: "Kefan Yang, Yi Zhang, Keqi Yang, Shengqing Zeng, Dapeng Zhang*", n: "poster presentation" },
+  { t: "Decision-Calibrated Neural Operator Forecasting for Post-Splashdown Recovery under Partial Observability and Physics Mismatch", v: "Engineering Applications of AI", y: "under review", d: "", a: "Dapeng Zhang, Yi Zhang, Sixing Guo, Yuting Li, Kexin Xie, Yuxin Jiang", n: "CAS Q1 top · IF 9", closed: true },
+  { t: "Probabilistic Identification of Transient Thermal Loads on Offshore Rocket Launch Decks Using Physics-Informed Neural Networks and Conditional Flow Matching", v: "Int. Communications in Heat and Mass Transfer", y: "under review", d: "", a: "Dapeng Zhang, Yi Zhang, Sixing Guo, Yuting Li, Kexin Xie, Yuxin Jiang", n: "CAS Q2 · IF 6.2", closed: true },
+  { t: "Research on Intelligent Monitoring of Offshore Structure Damage Through the Integration of Multimodal Sensing and Edge Computing", v: "Engineering Proceedings, 12th Int. Electronic Conference on Sensors and Applications", y: "Nov 2025", d: "10.3390/ECSA-12-26605", a: "Keqi Yang, Kefan Yang, Shengqing Zeng, Yi Zhang, Dapeng Zhang*", n: "Scopus-indexed conference" },
+  { t: "From Multi-Field Coupling Behaviors to Self-Powered Monitoring: Triboelectric Nanogenerator Arrays for Deep-Sea Large-Scale Cages", v: "J. Marine Science and Engineering 13(11), 2042", y: "Oct 2025", d: "10.3390/jmse13112042", a: "Kefan Yang, Shengqing Zeng, Keqi Yang, Dapeng Zhang*, Yi Zhang", n: "JCR Q1" },
+  { t: "Research on Improving the Efficiency of Aquaculture Using Self-Powered Triboelectric Nanogenerators and Microfluidic Technology", v: "5th International Online Conference on Nanomaterials (poster)", y: "Sep 2025", d: "", a: "Kefan Yang, Yi Zhang, Keqi Yang, Shengqing Zeng, Dapeng Zhang*", n: "poster presentation" },
+  { t: "Optimizing Deployment Processes and Control Strategies for Marine Submerged Buoy System: A Computational Approach", v: "Ocean Engineering 329, 121158", y: "Apr 2025", d: "10.1016/j.oceaneng.2025.121158", a: "Yi Zhang, Bowen Zhao, Dapeng Zhang*, Yining Zhang, Zhengjie Liang, Yifan Xie, Keqiang Zhu", n: "JCR Q1 · IF 5.5", closed: true },
+  { t: "Dynamic Configuration Simulation of Multi-branches Towed Array System", v: "Marine Structures 103, 103819", y: "Apr 2025", d: "10.1016/j.marstruc.2025.103819", a: "Yi Zhang, Dapeng Zhang*, Yifan Xie, Yining Zhang, Zhengjie Liang, Keqiang Zhu, Shutian Zhang", n: "JCR Q1 · IF 5.1", closed: true },
+  { t: "Study on Dynamic Characteristics and Fracture Failure of Rigid Truss Trawl System During Towing Process", v: "J. Marine Science and Engineering 13(3), 586", y: "Mar 2025", d: "10.3390/jmse13030586", a: "Dapeng Zhang, Bowen Zhao*, Yi Zhang, Keqiang Zhu, Jin Yan", n: "JCR Q1" },
+  { t: "Advances in Dynamic Positioning Offshore Platform-Riser Rigid-Flexible Multi-Body Systems", v: "Chinese Journal of Applied Mechanics", y: "Nov 2024", d: "10.1176/j.issn.1000-4939.2025.02.001", a: "Dapeng Zhang, Yong Bai*, Yi Zhang, Jin Yan, Yining Zhang, Zongduo Wu", n: "CSCD · in Chinese · corresponding author is an Academician of the Norwegian Academy of Technical Sciences", closed: true },
+  { t: "Exploring Subsea Dynamics: A Comprehensive Review of Underwater Pipelines and Cables", v: "Physics of Fluids 36, 101301", y: "Oct 2024", d: "10.1063/5.0231898", a: "Dapeng Zhang (Supervisor), Yi Zhang, Bowen Zhao*, Yunsheng Ma, Kaixi Si", n: "JCR Q1 · IF 4.3 · 37 citations · supervisor listed first; author is first student author", closed: true },
+  { t: "A Comprehensive Review of an Underwater Towing Cable Array: Dynamic Characteristics During the Outspread Process", v: "J. Marine Science and Engineering 12(10), 1880", y: "Oct 2024", d: "10.3390/jmse12101880", a: "Dapeng Zhang, Yangyang Luo*, Yi Zhang, Yunsheng Ma, Keqiang Zhu, Shengqin Zeng", n: "JCR Q1 · 4 citations" },
+  { t: "Marine Equipment Siting Using Machine-Learning-Based Ocean Remote Sensing Data: Current Status and Future Prospects", v: "Sustainability 16(20), 8889", y: "Oct 2024", d: "10.3390/su16208889", a: "Dapeng Zhang, Yunsheng Ma, Huilin Zhang*, Yi Zhang", n: "JCR Q2 · 7 citations" },
+  { t: "Numerical Simulation of Hydrodynamics of Ocean-Observation-Used Remotely Operated Vehicle", v: "Frontiers in Marine Science 11, 1357144", y: "Apr 2024", d: "10.3389/fmars.2024.1357144", a: "Dapeng Zhang, Bowen Zhao*, Yi Zhang, Nan Zhou", n: "JCR Q1 · IF 2.2 · 17 citations" },
+  { t: "A Review of Artificial Intelligence-Based Optimization Applications in Traditional Active Maritime Collision Avoidance", v: "Sustainability 15(18), 13384", y: "Sep 2023", d: "10.3390/su151813384", a: "Yi Zhang, Dapeng Zhang*, Haoyu Jiang", n: "JCR Q2 · IF 3.3 · 30 citations" },
+  { t: "Review of Challenges and Opportunities in Turbulence Modeling: A Comparative Analysis of Data-Driven Machine Learning Approaches", v: "J. Marine Science and Engineering 11(7), 1440", y: "Jul 2023", d: "10.3390/jmse11071440", a: "Yi Zhang, Dapeng Zhang*, Haoyu Jiang", n: "JCR Q1 · IF 2.7 · 91 citations" },
+  { t: "A Review of Offshore Wind and Wave Installations in Some Areas with an Eye towards Generating Economic Benefits and Offering Commercial Inspiration", v: "Sustainability 15(10), 8429", y: "May 2023", d: "10.3390/su15108429", a: "Yi Zhang, Dapeng Zhang*, Haoyu Jiang", n: "JCR Q2 · IF 3.3 · 22 citations" },
+  { t: "Influence of Different Static Equilibrium Calculation Methods on the Dynamic Response of Marine Cables during the Releasing Process: Review and a Case Study", v: "J. Marine Science and Engineering 11(4), 764", y: "Mar 2023", d: "10.3390/jmse11040764", a: "Dapeng Zhang, Bowen Zhao*, Jiyuan Sun, Yi Zhang, Keqiang Zhu, Haoyu Jiang", n: "JCR Q1 · 6 citations" },
 ];
 
 const I18N = {
@@ -86,11 +84,8 @@ const I18N = {
     r3_fig_hint: "Drop an image at <code>assets/figures/neural-operator.png</code>.",
 
     pubs_title: "Publications",
-    pubs_sub: "17 entries · 15 published (incl. 1 conference poster) · 6 first-author · 2 under review",
+    pubs_sub: "17 entries · 15 published (incl. 1 conference poster) · 2 under review · listed newest first",
     pubs_note: "<p>Titles and venues are kept in English in all language versions, following academic convention. Figures are shown only where the published version is open access (CC BY) or where I supply the original artwork; closed-access Elsevier and AIP papers are listed without figures.</p>",
-    g_first: "First author",
-    g_prep: "Under review",
-    g_co: "Co-author",
     fig_missing: "Figure not available",
     fig_license: "Figure reproduced from the published article (CC BY 4.0).",
     fig_own: "Figure supplied by the author.",
@@ -189,11 +184,8 @@ const I18N = {
     r3_fig_hint: "把图片放到 <code>assets/figures/neural-operator.png</code>。",
 
     pubs_title: "论文",
-    pubs_sub: "共 17 条 · 已发表 15 篇（含 1 篇会议海报）· 一作 6 条 · 在投 2 篇",
+    pubs_sub: "共 17 条 · 已发表 15 篇（含 1 篇会议海报）· 在投 2 篇 · 按时间倒序",
     pubs_note: "<p>论文标题与期刊在三种语言版本中统一保留英文，遵循学术惯例。仅在正式版为开放获取（CC BY）或由我提供原图时配图；Elsevier 与 AIP 的闭源论文不配图。</p>",
-    g_first: "第一作者",
-    g_prep: "在投",
-    g_co: "共同作者",
     fig_missing: "暂无配图",
     fig_license: "图片引自已发表论文（CC BY 4.0）。",
     fig_own: "图片由作者提供。",
@@ -292,11 +284,8 @@ const I18N = {
     r3_fig_hint: "把圖片放到 <code>assets/figures/neural-operator.png</code>。",
 
     pubs_title: "論文",
-    pubs_sub: "共 17 條 · 已發表 15 篇（含 1 篇會議海報）· 一作 6 條 · 在投 2 篇",
+    pubs_sub: "共 17 條 · 已發表 15 篇（含 1 篇會議海報）· 在投 2 篇 · 按時間倒序",
     pubs_note: "<p>論文標題與期刊在三種語言版本中統一保留英文，遵循學術慣例。僅在正式版為開放獲取（CC BY）或由我提供原圖時配圖；Elsevier 與 AIP 的封閉式論文不配圖。</p>",
-    g_first: "第一作者",
-    g_prep: "在投",
-    g_co: "共同作者",
     fig_missing: "暫無配圖",
     fig_license: "圖片引自已發表論文（CC BY 4.0）。",
     fig_own: "圖片由作者提供。",
@@ -436,10 +425,7 @@ function pubEntry(d, p) {
 }
 
 function renderPubs(d) {
-  const groups = [["first", d.g_first], ["prep", d.g_prep], ["co", d.g_co]];
-  document.getElementById("pubGroups").innerHTML = groups.map(([g, label]) =>
-    `<div class="pub-group"><h3>${label}</h3>${PUBS.filter(p => p.g === g).map(p => pubEntry(d, p)).join("")}</div>`
-  ).join("");
+  document.getElementById("pubGroups").innerHTML = PUBS.map(p => pubEntry(d, p)).join("");
 }
 
 function renderAwards(d) {
