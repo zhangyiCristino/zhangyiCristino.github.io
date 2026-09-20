@@ -90,7 +90,11 @@ h2::after { content: ""; flex: 1; height: 1px; background: var(--line); }
   border-radius: 10px; padding: 18px 20px;
 }
 .card h3 { margin: 0 0 4px; font-size: 16.5px; }
-.edu-logo { display: none; height: 32px; margin: 0 0 12px; }
+.edu-logo {
+  display: none;
+  max-height: 42px; max-width: 136px; width: auto; height: auto;
+  margin: 0 0 12px; object-fit: contain;
+}
 .card .meta { color: var(--fg-dim); font-size: 13.5px; margin: 0 0 8px; }
 .card p { margin: 0; font-size: 14.5px; }
 
