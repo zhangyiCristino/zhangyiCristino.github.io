@@ -31,14 +31,21 @@ nav.top {
 }
 nav.top .nav-inner {
   max-width: 880px; margin: 0 auto; padding: 12px 24px;
-  display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
+  display: flex; align-items: center; gap: 18px;
+  flex-wrap: nowrap; min-height: 30px;
 }
+nav.top { min-height: 54px; }
 nav.top .brand {
   font-family: Georgia, "Songti SC", "Songti TC", serif;
   font-size: 17px; color: var(--fg); font-weight: 600; letter-spacing: 0.3px;
 }
 nav.top .brand:hover { text-decoration: none; }
-nav.top ul { list-style: none; display: flex; gap: 4px; margin: 0; padding: 0; }
+nav.top ul {
+  list-style: none; display: flex; gap: 4px; margin: 0; padding: 0;
+  flex: 0 1 auto; min-width: 0; overflow-x: auto;
+  scrollbar-width: none;
+}
+nav.top ul::-webkit-scrollbar { display: none; }
 nav.top ul a {
   display: block; padding: 6px 12px; border-radius: 7px;
   font-size: 14.5px; color: var(--fg-dim);
@@ -150,6 +157,10 @@ footer { padding: 40px 0 36px; border-top: 1px solid var(--line); margin-top: 36
 @media (max-width: 640px) {
   h1 { font-size: 28px; }
   .head-photo { width: 88px; height: 110px; }
-  nav.top ul { gap: 0; }
-  nav.top ul a { padding: 6px 8px; font-size: 13.5px; }
+  nav.top .nav-inner { gap: 10px; padding: 12px 14px; }
+  nav.top .brand { display: none; }
+  nav.top ul { overflow-x: auto; flex: 1; min-width: 0; scrollbar-width: none; }
+  nav.top ul::-webkit-scrollbar { display: none; }
+  nav.top ul a { padding: 6px 7px; font-size: 13px; white-space: nowrap; }
+  .lang-switch { margin-left: 0; flex: none; }
 }

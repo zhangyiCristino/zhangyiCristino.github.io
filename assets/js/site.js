@@ -35,6 +35,7 @@ const PUBS = [
 const I18N = {
   en: {
     nav_intro: "Intro", nav_research: "Research", nav_pubs: "Publications", nav_exp: "Experience", nav_connect: "Contact",
+    doc_title: "Yi Zhang",
     h1: "Yi Zhang",
     affil: "MSc in Smart Manufacturing, HKUST(GZ) · <a href='https://pairslab.github.io/'>PAIRS Lab</a>, Prof. Fangqiang Ding · Shenzhen, China",
     about_h: "About",
@@ -135,6 +136,7 @@ const I18N = {
 
   zh: {
     nav_intro: "简介", nav_research: "研究", nav_pubs: "论文", nav_exp: "经历", nav_connect: "联系",
+    doc_title: "张仡 · Yi Zhang",
     h1: "Yi Zhang · 张仡",
     affil: "香港科技大学（广州）智能制造理学硕士 · <a href='https://pairslab.github.io/'>PAIRS Lab</a>，丁方强教授 · 广东深圳",
     about_h: "简介",
@@ -235,6 +237,7 @@ const I18N = {
 
   "zh-tw": {
     nav_intro: "簡介", nav_research: "研究", nav_pubs: "論文", nav_exp: "經歷", nav_connect: "聯絡",
+    doc_title: "張仡 · Yi Zhang",
     h1: "Yi Zhang · 張仡",
     affil: "香港科技大學（廣州）智慧製造理學碩士 · <a href='https://pairslab.github.io/'>PAIRS Lab</a>，丁方強教授 · 廣東深圳",
     about_h: "簡介",
@@ -359,7 +362,11 @@ function render(page) {
       ? (/(TW|Hant|HK)/i.test(navigator.language) ? "zh-tw" : "zh") : "en");
   applyLang(page);
   document.querySelectorAll("#langSwitch button").forEach(b =>
-    b.addEventListener("click", () => { localStorage.setItem("lang", b.dataset.lang); applyLang(page); }));
+    b.addEventListener("click", () => {
+      page_lang = b.dataset.lang;
+      localStorage.setItem("lang", page_lang);
+      applyLang(page);
+    }));
 }
 
 function applyLang(page) {
@@ -367,6 +374,8 @@ function applyLang(page) {
   const d = I18N[lang] || I18N.en;
   document.body.dataset.lang = lang;
   document.documentElement.lang = lang === "zh-tw" ? "zh-TW" : lang;
+  const navKey = (NAV.find(([href]) => href === page) || [])[1];
+  document.title = navKey && d[navKey] ? `${d[navKey]} · ${d.doc_title}` : d.doc_title;
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const k = el.dataset.i18n;
     if (d[k] !== undefined) el.innerHTML = d[k];
