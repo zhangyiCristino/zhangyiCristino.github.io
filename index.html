@@ -5,159 +5,38 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Yi Zhang — Real2Sim for Robot Learning</title>
 <meta name="description" content="Yi Zhang — MSc in Smart Manufacturing at HKUST(GZ), PAIRS Lab. Real2Sim for robot learning, backed by four years of computational ocean engineering.">
-<style>
-  :root {
-    --bg: #ffffff;
-    --bg-soft: #f7f8fa;
-    --fg: #1a2230;
-    --fg-dim: #5c6675;
-    --accent: #0f5c7a;
-    --accent-soft: rgba(15, 92, 122, 0.09);
-    --line: #e3e6ea;
-    --card: #f7f8fa;
-  }
-  * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--fg);
-    font-family: -apple-system, "PingFang SC", "PingFang TC", "Noto Sans CJK SC", "Noto Sans CJK TC", "Segoe UI", sans-serif;
-    line-height: 1.65;
-  }
-  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-
-  header {
-    padding: 72px 0 40px;
-    border-bottom: 1px solid var(--line);
-  }
-  .head-flex { display: flex; gap: 28px; align-items: flex-start; }
-  .head-flex .head-text { flex: 1; min-width: 0; }
-  .head-photo {
-    width: 112px; height: 140px; flex: none;
-    border-radius: 10px; object-fit: cover;
-    border: 1px solid var(--line);
-  }
-  .uni-logo {
-    height: 40px; margin: 0 0 14px; display: block;
-  }
-  .lang-switch {
-    position: absolute; top: 20px; right: 24px;
-    display: flex; gap: 4px;
-  }
-  .lang-switch button {
-    background: transparent; color: var(--fg-dim);
-    border: 1px solid var(--line); border-radius: 6px;
-    padding: 4px 10px; cursor: pointer; font-size: 13px;
-  }
-  .lang-switch button.on { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
-  h1 { font-family: Georgia, "Songti SC", "Songti TC", serif; font-size: 40px; margin: 0 0 6px; letter-spacing: 0.5px; }
-  .contact-line { color: var(--fg-dim); font-size: 14.5px; }
-  .contact-line span { white-space: nowrap; }
-
-  section { padding: 44px 0 8px; }
-  h2 {
-    font-family: Georgia, "Songti SC", "Songti TC", serif;
-    font-size: 22px; margin: 0 0 20px;
-    display: flex; align-items: center; gap: 14px;
-  }
-  h2::after { content: ""; flex: 1; height: 1px; background: var(--line); }
-
-  .prose p { margin: 0 0 14px; }
-  .prose .zh-only { display: none; }
-  body[data-lang="zh"] .prose .zh-only { display: block; }
-  body[data-lang="en"] .prose .en-only { display: block; }
-
-  .cards { display: grid; gap: 14px; }
-  .card {
-    background: var(--card); border: 1px solid var(--line);
-    border-radius: 10px; padding: 18px 20px;
-  }
-  .card h3 { margin: 0 0 4px; font-size: 16.5px; }
-  .card .meta { color: var(--fg-dim); font-size: 13.5px; margin: 0 0 8px; }
-  .card p { margin: 0; font-size: 14.5px; color: var(--fg); }
-  .card .tags { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
-  .tag {
-    font-size: 12px; color: var(--accent);
-    background: var(--accent-soft); border-radius: 4px; padding: 2px 8px;
-  }
-  .pub { padding: 14px 0; border-bottom: 1px solid var(--line); }
-  .pub:last-child { border-bottom: none; }
-  .pub .venue { color: var(--accent); font-size: 13.5px; }
-  .pub .authors { color: var(--fg-dim); font-size: 13px; }
-  .pub .cites { color: var(--fg-dim); font-size: 13px; }
-  .pub b.self { color: var(--fg); }
-
-  ul.skills { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
-  ul.skills li {
-    background: var(--card); border: 1px solid var(--line);
-    border-radius: 6px; padding: 5px 12px; font-size: 13.5px;
-  }
-  ul.awards { padding-left: 20px; font-size: 14.5px; }
-  ul.awards li { margin-bottom: 6px; }
-
-  footer { padding: 48px 0 40px; border-top: 1px solid var(--line); margin-top: 40px; color: var(--fg-dim); font-size: 13px; }
-  @media (max-width: 640px) { h1 { font-size: 30px; } header { padding-top: 96px; } }
-</style>
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body data-lang="en">
-<div class="lang-switch" id="langSwitch">
-  <button data-lang="en" class="on">EN</button>
-  <button data-lang="zh">简</button>
-  <button data-lang="zh-tw">繁</button>
-</div>
+<nav class="top" id="topnav"></nav>
 
 <div class="wrap">
-<header>
+<header class="hero">
   <div class="head-flex">
     <div class="head-text">
       <img class="uni-logo" src="assets/hkustgz-logo.png" alt="HKUST(GZ)">
       <h1 data-i18n="h1"></h1>
+      <p class="contact-line" data-i18n="affil"></p>
+      <p class="contact-line">yzhang996@connect.hkust-gz.edu.cn · zhangyi19492004@163.com</p>
       <p class="contact-line">
-    <span data-i18n="affil"></span><br>
-    <span>yzhang996@connect.hkust-gz.edu.cn · zhangyi19492004@163.com</span><br>
-    <span>
-      <a href="https://scholar.google.com/citations?user=YPHhw8gAAAAJ&hl=zh-CN">Google Scholar</a> ·
-      <a href="https://orcid.org/0009-0003-0639-8082">ORCID</a> ·
-      <a href="https://github.com/zhangyiCristino">GitHub</a> ·
-      <a href="https://www.researchgate.net/profile/Yi-Zhang-950?ev=hdr_xprf">ResearchGate</a>
-    </span>
-    </p>
+        <a href="https://scholar.google.com/citations?user=YPHhw8gAAAAJ&hl=zh-CN">Google Scholar</a> ·
+        <a href="https://orcid.org/0009-0003-0639-8082">ORCID</a> ·
+        <a href="https://github.com/zhangyiCristino">GitHub</a> ·
+        <a href="https://www.researchgate.net/profile/Yi-Zhang-950">ResearchGate</a>
+      </p>
     </div>
     <img class="head-photo" src="assets/my.jpg" alt="Yi Zhang">
   </div>
 </header>
 
-<section id="about">
+<section>
   <h2 data-i18n="about_h"></h2>
   <div class="prose" data-i18n="about_p1"></div>
   <div class="prose" data-i18n="about_p2"></div>
+  <div class="prose" data-i18n="intro_cta"></div>
 </section>
 
-<section id="research">
-  <h2 data-i18n="research_h"></h2>
-  <div class="cards">
-    <div class="card">
-      <h3 data-i18n="r1_t"></h3>
-      <p class="meta" data-i18n="r1_m"></p>
-      <p data-i18n="r1_p"></p>
-    </div>
-    <div class="card">
-      <h3 data-i18n="r2_t"></h3>
-      <p class="meta" data-i18n="r2_m"></p>
-      <p data-i18n="r2_p"></p>
-    </div>
-    <div class="card">
-      <h3 data-i18n="r3_t"></h3>
-      <p class="meta" data-i18n="r3_m"></p>
-      <p data-i18n="r3_p"></p>
-    </div>
-  </div>
-</section>
-
-<section id="education">
+<section>
   <h2 data-i18n="edu_h"></h2>
   <div class="cards">
     <div class="card">
@@ -173,197 +52,14 @@
   </div>
 </section>
 
-<section id="pubs">
-  <h2 data-i18n="pubs_h"></h2>
-  <p class="contact-line" data-i18n="pubs_meta"></p>
-  <div id="pubList"></div>
-</section>
-
-<section id="skills">
-  <h2 data-i18n="skills_h"></h2>
-  <ul class="skills" id="skillList"></ul>
-</section>
-
-<section id="awards">
+<section>
   <h2 data-i18n="awards_h"></h2>
   <ul class="awards" id="awardList"></ul>
 </section>
 
-<footer>
-  <span data-i18n="footer"></span> · <a href="https://github.com/zhangyiCristino">GitHub</a>
-</footer>
+<footer data-i18n="footer"></footer>
 </div>
-
-<script>
-const I18N = {
-  en: {
-    h1: "Yi Zhang",
-    affil: "MSc in Smart Manufacturing, HKUST(GZ) · <a href='https://pairslab.github.io/'>PAIRS Lab</a>, Prof. Fangqiang Ding · Shenzhen, China",
-    about_h: "About",
-    about_p1: "<p>I work on how faithfully simulated scenes transfer to real robots: visual fidelity, geometric consistency, and <b>physical fidelity</b> of contact-rich manipulation — and which of them a robot policy actually depends on.</p>",
-    about_p2: "<p>Before robotics I spent four years in computational ocean engineering at Guangdong Ocean University (POE Lab, Prof. Dapeng Zhang, 2022–2026): CFD, FEM, lumped-mass cable dynamics, neural operators, and PINNs — the toolkit most real2sim pipelines are missing.</p>",
-    research_h: "Research Interests",
-    r1_t: "Real2Sim scene fidelity",
-    r1_m: "<a href='https://pairslab.github.io/'>PAIRS Lab</a>, HKUST(GZ) · 2026–",
-    r1_p: "What do robot policies actually need from high-fidelity simulated scenes? Studying how visual fidelity, geometric consistency, and physics consistency each affect policy training and evaluation.",
-    r2_t: "Tactile Real2Sim",
-    r2_m: "<a href='https://pairslab.github.io/'>PAIRS Lab</a>, HKUST(GZ)",
-    r2_p: "Reconstructing real-world visual–tactile interactions into simulatable environments for contact-rich manipulation training and evaluation (Tactile SimFoundry direction).",
-    r3_t: "Physics-informed learning for marine systems",
-    r3_m: "POE Lab, Guangdong Ocean University · 2022–2026",
-    r3_p: "Neural operators and PINNs for offshore engineering: splashdown wave-field forecasting, thermal-load inversion, forward-problem inversion and parameter identification.",
-    edu_h: "Education",
-    e1_t: "The Hong Kong University of Science and Technology (Guangzhou)",
-    e1_m: "MSc in Smart Manufacturing · Sep 2026 – present",
-    e1_p: "<a href='https://pairslab.github.io/'>PAIRS Lab</a> (Prof. Fangqiang Ding).",
-    e2_t: "Guangdong Ocean University",
-    e2_m: "BEng in Naval Architecture and Ocean Engineering · Sep 2022 – Jun 2026",
-    e2_p: "GPA 82.53/100. POE Lab (Prof. Dapeng Zhang). First-class university scholarship (2023).",
-    pubs_h: "Selected Publications",
-    pubs_meta: "16 total · 5 first-author SCI · peer reviewer for Journal of Operational Oceanography and International Journal of Digital Earth",
-    skills_h: "Toolbox",
-    awards_h: "Selected Awards",
-    footer: "© 2026 Yi Zhang",
-    pubs: [
-      ["Optimizing deployment processes and control strategies for marine submerged buoy system: A computational approach", "Ocean Engineering (2025), JCR Q1", "Y. Zhang, B. Zhao, D. Zhang*, Y. Zhang, Z. Liang, Y. Xie, K. Zhu", "https://doi.org/10.1016/j.oceaneng.2025.121158", ""],
-      ["Dynamic configuration simulation of multi-branches towed array system", "Marine Structures (2025), JCR Q1", "Y. Zhang, D. Zhang*, Y. Xie, Y. Zhang, Z. Liang, K. Zhu, S. Zhang", "https://doi.org/10.1016/j.marstruc.2025.103819", ""],
-      ["Review of challenges and opportunities in turbulence modeling: A comparative analysis of data-driven machine learning approaches", "J. Marine Science and Engineering (2023)", "Y. Zhang, D. Zhang*, H. Jiang", "https://doi.org/10.3390/jmse11071440", "90+ citations"],
-      ["Exploring subsea dynamics: A comprehensive review of underwater pipelines and cables", "Physics of Fluids (2024)", "D. Zhang, Y. Zhang, B. Zhao*, Y. Ma, K. Si", "https://doi.org/10.1063/5.0231898", "37 citations"],
-      ["A review of AI-based optimization applications in traditional active maritime collision avoidance", "Sustainability (2023)", "Y. Zhang, D. Zhang*, H. Jiang", "https://doi.org/10.3390/su151813384", "30 citations"],
-      ["Probabilistic identification of transient thermal loads on offshore rocket launch decks (physics-informed surrogate + conditional flow matching)", "Int. Comm. Heat and Mass Transfer — under review", "D. Zhang, Y. Zhang, S. Guo, Y. Li, K. Xie, Y. Jiang", "", ""],
-      ["Decision-calibrated neural operator forecasting for post-splashdown recovery (under review)", "Engineering Applications of AI — under review", "D. Zhang, Y. Zhang, S. Guo, Y. Li, K. Xie, Y. Jiang", "", ""],
-    ],
-    skills: ["MuJoCo", "Isaac Sim", "Python", "PyTorch", "Neural operators", "PINNs", "StarCCM+", "COMSOL", "Abaqus", "MATLAB", "LaTeX", "C++"],
-    awards: [
-      "National Second Prize, 13th China Marine Vehicle Design & Manufacturing Contest (2024)",
-      "First Prize (South China Regional), same contest (2024)",
-      "Third Prize, APMCM Asia-Pacific Mathematical Contest in Modeling (2025)",
-      "First-Class & Second-Class University Scholarships (2023, 2025)",
-      "'Star of Scientific Research', Ship & Maritime College (2024, 2026)",
-    ],
-  },
-  zh: {
-    h1: "Yi Zhang · 张仡",
-    affil: "香港科技大学（广州）智能制造理学硕士 · <a href='https://pairslab.github.io/'>PAIRS Lab</a>，丁方强教授 · 广东深圳",
-    about_h: "简介",
-    about_p1: "<p>我研究仿真场景以多大保真度迁移到真实机器人：视觉保真度、几何一致性与接触丰富操作的<b>物理保真度</b>，以及机器人策略真正依赖的到底是哪一项。</p>",
-    about_p2: "<p>进入机器人领域之前，我在广东海洋大学做了四年计算海洋工程（POE Lab，张大朋教授，2022–2026）：CFD、有限元、集中质量法缆索动力学、神经算子与 PINN。这些正是大多数 real2sim 管线缺失的工具箱。</p>",
-    research_h: "研究方向",
-    r1_t: "Real2Sim 场景保真度评估",
-    r1_m: "<a href='https://pairslab.github.io/'>PAIRS Lab</a>，港科大（广州）· 2026–",
-    r1_p: "机器人策略到底需要多高保真度的仿真场景？研究视觉保真度、几何一致性与物理一致性各自对策略训练与评测的影响。",
-    r2_t: "触觉 Real2Sim",
-    r2_m: "<a href='https://pairslab.github.io/'>PAIRS Lab</a>，港科大（广州）",
-    r2_p: "将真实世界视觉–触觉交互数据重建为可仿真的交互环境，用于接触丰富型机器人操作的策略训练与评测（Tactile SimFoundry 方向）。",
-    r3_t: "海洋系统的物理信息化学习",
-    r3_m: "POE Lab，广东海洋大学 · 2022–2026",
-    r3_p: "面向海洋工程的神经算子与 PINN：火箭溅落波场预测、甲板热效应反演、正问题反演与参数识别。",
-    edu_h: "教育经历",
-    e1_t: "香港科技大学（广州）",
-    e1_m: "智能制造理学硕士 · 2026.09 – 至今",
-    e1_p: "<a href='https://pairslab.github.io/'>PAIRS Lab</a>（丁方强教授）。",
-    e2_t: "广东海洋大学",
-    e2_m: "船舶与海洋工程工学学士 · 2022.09 – 2026.06",
-    e2_p: "GPA 82.53/100。POE Lab（张大朋教授）。校一等奖学金（2023）。",
-    pubs_h: "代表性论文",
-    pubs_meta: "共 16 篇 · 5 篇一作 SCI ·《Journal of Operational Oceanography》《International Journal of Digital Earth》审稿人",
-    skills_h: "工具箱",
-    awards_h: "部分获奖",
-    footer: "© 2026 张仡",
-    pubs: [
-      ["水下悬浮标系统的布放流程与控制策略优化：一种计算方法", "Ocean Engineering（2025），中科院二区 top", "张仡, B. Zhao, 张大朋*, Y. Zhang, Z. Liang, Y. Xie, K. Zhu", "https://doi.org/10.1016/j.oceaneng.2025.121158", ""],
-      ["多分支拖曳阵列系统的动态构型仿真", "Marine Structures（2025），中科院二区", "张仡, 张大朋*, Y. Xie, Y. Zhang, Z. Liang, K. Zhu, S. Zhang", "https://doi.org/10.1016/j.marstruc.2025.103819", ""],
-      ["湍流建模的挑战与机遇：数据驱动机器学习方法的比较分析（综述）", "JMSE（2023）", "张仡, 张大朋*, H. Jiang", "https://doi.org/10.3390/jmse11071440", "90+ 引用"],
-      ["海底管道与海缆动力学综述", "Physics of Fluids（2024）", "张大朋, 张仡, B. Zhao*, Y. Ma, K. Si", "https://doi.org/10.1063/5.0231898", "37 引用"],
-      ["人工智能在传统主动式海上避碰优化中的应用综述", "Sustainability（2023）", "张仡, 张大朋*, H. Jiang", "https://doi.org/10.3390/su151813384", "30 引用"],
-      ["基于物理代理模型与条件流匹配的海上火箭发射甲板瞬态热载荷概率识别", "Int. Comm. Heat and Mass Transfer · 在投", "张大朋, 张仡, S. Guo, Y. Li, K. Xie, Y. Jiang", "", ""],
-      ["面向溅落后回收的决策校准神经算子预报（在投）", "Engineering Applications of AI · 在投", "张大朋, 张仡, S. Guo, Y. Li, K. Xie, Y. Jiang", "", ""],
-    ],
-    skills: ["MuJoCo", "Isaac Sim", "Python", "PyTorch", "神经算子", "PINN", "StarCCM+", "COMSOL", "Abaqus", "MATLAB", "LaTeX", "C++"],
-    awards: [
-      "第13届全国海洋航行器设计与制作大赛 全国二等奖（2024）",
-      "同赛事 华南赛区一等奖（2024）",
-      "APMCM 亚太地区大学生数学建模竞赛 三等奖（2025）",
-      "校一等奖学金（2023）、二等奖学金（2025）",
-      "船舶与海运学院 科创之星（2024、2026）",
-    ],
-  },
-  "zh-tw": {
-    h1: "Yi Zhang · 張仡",
-    affil: "香港科技大學（廣州）智慧製造理學碩士 · <a href='https://pairslab.github.io/'>PAIRS Lab</a>，丁方強教授 · 廣東深圳",
-    about_h: "簡介",
-    about_p1: "<p>我研究模擬場景以多大保真度遷移到真實機器人：視覺保真度、幾何一致性與接觸豐富操作的<b>物理保真度</b>，以及機器人策略真正依賴的到底是哪一項。</p>",
-    about_p2: "<p>進入機器人領域之前，我在廣東海洋大學做了四年計算海洋工程（POE Lab，張大朋教授，2022–2026）：CFD、有限元素法、集中質量法纜索動力學、神經算子與 PINN。這些正是大多數 real2sim 管線缺失的工具箱。</p>",
-    research_h: "研究方向",
-    r1_t: "Real2Sim 場景保真度評估",
-    r1_m: "<a href='https://pairslab.github.io/'>PAIRS Lab</a>，港科大（廣州）· 2026–",
-    r1_p: "機器人策略到底需要多高保真度的模擬場景？研究視覺保真度、幾何一致性與物理一致性各自對策略訓練與評測的影響。",
-    r2_t: "觸覺 Real2Sim",
-    r2_m: "<a href='https://pairslab.github.io/'>PAIRS Lab</a>，港科大（廣州）",
-    r2_p: "將真實世界視覺–觸覺互動資料重建為可模擬的互動環境，用於接觸豐富型機器人操作的策略訓練與評測（Tactile SimFoundry 方向）。",
-    r3_t: "海洋系統的物理信息化學習",
-    r3_m: "POE Lab，廣東海洋大學 · 2022–2026",
-    r3_p: "面向海洋工程的神經算子與 PINN：火箭濺落波場預測、甲板熱效應反演、正問題反演與參數辨識。",
-    edu_h: "教育經歷",
-    e1_t: "香港科技大學（廣州）",
-    e1_m: "智慧製造理學碩士 · 2026.09 – 至今",
-    e1_p: "<a href='https://pairslab.github.io/'>PAIRS Lab</a>（丁方強教授）。",
-    e2_t: "廣東海洋大學",
-    e2_m: "船舶與海洋工程工學學士 · 2022.09 – 2026.06",
-    e2_p: "GPA 82.53/100。POE Lab（張大朋教授）。校一等獎學金（2023）。",
-    pubs_h: "代表性論文",
-    pubs_meta: "共 16 篇 · 5 篇一作 SCI ·《Journal of Operational Oceanography》《International Journal of Digital Earth》審稿人",
-    skills_h: "工具箱",
-    awards_h: "部分獲獎",
-    footer: "© 2026 張仡",
-    pubs: [
-      ["水下懸浮標系統的布放流程與控制策略最佳化：一種計算方法", "Ocean Engineering（2025）", "張仡, B. Zhao, 張大朋*, Y. Zhang, Z. Liang, Y. Xie, K. Zhu", "https://doi.org/10.1016/j.oceaneng.2025.121158", ""],
-      ["多分支拖曳陣列系統的動態構型模擬", "Marine Structures（2025）", "張仡, 張大朋*, Y. Xie, Y. Zhang, Z. Liang, K. Zhu, S. Zhang", "https://doi.org/10.1016/j.marstruc.2025.103819", ""],
-      ["湍流建模的挑戰與機遇：資料驅動機器學習方法的比較分析（綜述）", "JMSE（2023）", "張仡, 張大朋*, H. Jiang", "https://doi.org/10.3390/jmse11071440", "90+ 引用"],
-      ["海底管道與海纜動力學綜述", "Physics of Fluids（2024）", "張大朋, 張仡, B. Zhao*, Y. Ma, K. Si", "https://doi.org/10.1063/5.0231898", "37 引用"],
-      ["人工智慧在傳統主動式海上避碰最佳化中的應用綜述", "Sustainability（2023）", "張仡, 張大朋*, H. Jiang", "https://doi.org/10.3390/su151813384", "30 引用"],
-      ["基於物理代理模型與條件流匹配的海上火箭發射甲板瞬態熱載荷概率辨識", "Int. Comm. Heat and Mass Transfer · 在投", "張大朋, 張仡, S. Guo, Y. Li, K. Xie, Y. Jiang", "", ""],
-      ["面向濺落後回收的決策校準神經算子預報（在投）", "Engineering Applications of AI · 在投", "張大朋, 張仡, S. Guo, Y. Li, K. Xie, Y. Jiang", "", ""],
-    ],
-    skills: ["MuJoCo", "Isaac Sim", "Python", "PyTorch", "神經算子", "PINN", "StarCCM+", "COMSOL", "Abaqus", "MATLAB", "LaTeX", "C++"],
-    awards: [
-      "第13屆全國海洋航行器設計與製作大賽 全國二等獎（2024）",
-      "同賽事 華南賽區一等獎（2024）",
-      "APMCM 亞太地區大學生數學建模競賽 三等獎（2025）",
-      "校一等獎學金（2023）、二等獎學金（2025）",
-      "船舶與海運學院 科創之星（2024、2026）",
-    ],
-  },
-};
-
-function render(lang) {
-  const d = I18N[lang] || I18N.en;
-  document.body.dataset.lang = lang;
-  document.documentElement.lang = lang === "zh-tw" ? "zh-TW" : lang;
-  document.querySelectorAll("[data-i18n]").forEach(el => {
-    const k = el.dataset.i18n;
-    if (d[k] !== undefined) el.innerHTML = d[k];
-  });
-  const esc = s => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
-  document.getElementById("pubList").innerHTML = d.pubs.map(p => `
-    <div class="pub">
-      <div>${p[3] ? `<a href="${p[3]}">${esc(p[0])}</a>` : esc(p[0])}</div>
-      <div class="venue">${esc(p[1])}</div>
-      <div class="authors">${esc(p[2])}</div>
-      ${p[4] ? `<div class="cites">${esc(p[4])}</div>` : ""}
-    </div>`).join("");
-  document.getElementById("skillList").innerHTML = d.skills.map(s => `<li>${esc(s)}</li>`).join("");
-  document.getElementById("awardList").innerHTML = d.awards.map(a => `<li>${esc(a)}</li>`).join("");
-  document.querySelectorAll("#langSwitch button").forEach(b =>
-    b.classList.toggle("on", b.dataset.lang === lang));
-  localStorage.setItem("lang", lang);
-}
-
-document.querySelectorAll("#langSwitch button").forEach(b =>
-  b.addEventListener("click", () => render(b.dataset.lang)));
-
-render(localStorage.getItem("lang") ||
-  (navigator.language.startsWith("zh") ? (navigator.language === "zh-TW" || navigator.language === "zh-Hant" ? "zh-tw" : "zh") : "en"));
-</script>
+<script src="assets/js/site.js"></script>
+<script>render("index.html");</script>
 </body>
 </html>
