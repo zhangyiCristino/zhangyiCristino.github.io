@@ -17,6 +17,7 @@ const PUBS = [
   { t: "Research on Intelligent Monitoring of Offshore Structure Damage Through the Integration of Multimodal Sensing and Edge Computing", v: "Engineering Proceedings, 12th Int. Electronic Conference on Sensors and Applications", y: "Nov 2025", d: "10.3390/ECSA-12-26605", a: "Keqi Yang, Kefan Yang, Shengqing Zeng, Yi Zhang, Dapeng Zhang*", n: "Scopus-indexed conference" },
   { t: "From Multi-Field Coupling Behaviors to Self-Powered Monitoring: Triboelectric Nanogenerator Arrays for Deep-Sea Large-Scale Cages", v: "J. Marine Science and Engineering 13(11), 2042", y: "Oct 2025", d: "10.3390/jmse13112042", a: "Kefan Yang, Shengqing Zeng, Keqi Yang, Dapeng Zhang*, Yi Zhang", } ,
   { t: "Research on Improving the Efficiency of Aquaculture Using Self-Powered Triboelectric Nanogenerators and Microfluidic Technology", v: "5th International Online Conference on Nanomaterials (poster)", y: "Sep 2025", d: "", a: "Kefan Yang, Yi Zhang, Keqi Yang, Shengqing Zeng, Dapeng Zhang*", n: "poster presentation" },
+  { t: "Challenges in Tidal Energy Commercialization and Technological Advancements for Sustainable Solutions", v: "iScience 28, 112348", y: "May 2025", d: "10.1016/j.isci.2025.112348", a: "Dapeng Zhang, Keqi Yang, Huiling Zhang, Kefan Yang, Shengqing Zeng, Kaixi Si, Yi Zhang", n: "19 citations", closed: true },
   { t: "Optimizing Deployment Processes and Control Strategies for Marine Submerged Buoy System: A Computational Approach", v: "Ocean Engineering 329, 121158", y: "Apr 2025", d: "10.1016/j.oceaneng.2025.121158", a: "Yi Zhang, Bowen Zhao, Dapeng Zhang*, Yining Zhang, Zhengjie Liang, Yifan Xie, Keqiang Zhu", closed: true },
   { t: "Dynamic Configuration Simulation of Multi-branches Towed Array System", v: "Marine Structures 103, 103819", y: "Apr 2025", d: "10.1016/j.marstruc.2025.103819", a: "Yi Zhang, Dapeng Zhang*, Yifan Xie, Yining Zhang, Zhengjie Liang, Keqiang Zhu, Shutian Zhang", closed: true },
   { t: "Study on Dynamic Characteristics and Fracture Failure of Rigid Truss Trawl System During Towing Process", v: "J. Marine Science and Engineering 13(3), 586", y: "Mar 2025", d: "10.3390/jmse13030586", a: "Dapeng Zhang, Bowen Zhao*, Yi Zhang, Keqiang Zhu, Jin Yan", } ,
@@ -84,7 +85,7 @@ const I18N = {
     r3_fig_hint: "Drop an image at <code>assets/figures/neural-operator.png</code>.",
 
     pubs_title: "Publications",
-    pubs_sub: "17 entries · 15 published (incl. 1 conference poster) · 2 under review · 303 citations, h-index 9 (Google Scholar)",
+    pubs_sub: "18 entries · 16 published (incl. 1 conference poster) · 2 under review · 303 citations, h-index 9 (Google Scholar)",
     pubs_note: "<p>Titles and venues are kept in English in all language versions, following academic convention. Figures are shown only where the published version is open access (CC BY) or where I supply the original artwork; closed-access Elsevier and AIP papers are listed without figures.</p>",
     fig_missing: "Figure not available",
     fig_license: "Figure reproduced from the published article (CC BY 4.0).",
@@ -184,7 +185,7 @@ const I18N = {
     r3_fig_hint: "把图片放到 <code>assets/figures/neural-operator.png</code>。",
 
     pubs_title: "论文",
-    pubs_sub: "共 17 条 · 已发表 15 篇（含 1 篇会议海报）· 在投 2 篇 · Google Scholar 总被引 303，h-index 9",
+    pubs_sub: "共 18 条 · 已发表 16 篇（含 1 篇会议海报）· 在投 2 篇 · Google Scholar 总被引 303，h-index 9",
     pubs_note: "<p>论文标题与期刊在三种语言版本中统一保留英文，遵循学术惯例。仅在正式版为开放获取（CC BY）或由我提供原图时配图；Elsevier 与 AIP 的闭源论文不配图。</p>",
     fig_missing: "暂无配图",
     fig_license: "图片引自已发表论文（CC BY 4.0）。",
@@ -284,7 +285,7 @@ const I18N = {
     r3_fig_hint: "把圖片放到 <code>assets/figures/neural-operator.png</code>。",
 
     pubs_title: "論文",
-    pubs_sub: "共 17 條 · 已發表 15 篇（含 1 篇會議海報）· 在投 2 篇 · Google Scholar 總被引 303，h-index 9",
+    pubs_sub: "共 18 條 · 已發表 16 篇（含 1 篇會議海報）· 在投 2 篇 · Google Scholar 總被引 303，h-index 9",
     pubs_note: "<p>論文標題與期刊在三種語言版本中統一保留英文，遵循學術慣例。僅在正式版為開放獲取（CC BY）或由我提供原圖時配圖；Elsevier 與 AIP 的封閉式論文不配圖。</p>",
     fig_missing: "暫無配圖",
     fig_license: "圖片引自已發表論文（CC BY 4.0）。",
