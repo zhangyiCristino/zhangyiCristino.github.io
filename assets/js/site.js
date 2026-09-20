@@ -396,13 +396,29 @@ function renderExperience(d) {
   document.getElementById("svcList").innerHTML = d.svc.map(s => `<li>${s}</li>`).join("");
 }
 
+/* Each optional image is probed once per page load. Language switches reuse the
+   verdict instead of re-requesting a file that may not exist. */
+const imgProbe = new Map();
+
+function probeImage(src) {
+  if (!imgProbe.has(src)) {
+    imgProbe.set(src, new Promise(resolve => {
+      const p = new Image();
+      p.onload = () => resolve(true);
+      p.onerror = () => resolve(false);
+      p.src = src;
+    }));
+  }
+  return imgProbe.get(src);
+}
+
 /* Institution logos auto-mount from assets/logos/<key>.png when supplied. */
 function wireLogos() {
   document.querySelectorAll("img[data-logo]").forEach(img => {
     const src = `assets/logos/${img.dataset.logo}.png`;
-    const probe = new Image();
-    probe.onload = () => { img.src = src; img.style.display = "block"; };
-    probe.src = src;
+    probeImage(src).then(ok => {
+      if (ok) { img.src = src; img.style.display = "block"; }
+    });
   });
 }
 
@@ -436,16 +452,17 @@ function renderAwards(d) {
 /* Auto-mount assets/figures/<key>.png; fall back to the placeholder box. */
 function wireFigures(d) {
   document.querySelectorAll(".figure[data-fig]").forEach(box => {
-    const key = box.dataset.fig;
-    const src = `assets/figures/${key}.png`;
-    const probe = new Image();
-    probe.onload = () => {
+    const src = `assets/figures/${box.dataset.fig}.png`;
+    probeImage(src).then(ok => {
+      if (!ok) { box.classList.remove("has-img"); return; }
       box.classList.add("has-img");
-      const img = box.querySelector("img.fig-img") || document.createElement("img");
-      img.className = "fig-img"; img.alt = ""; img.src = src;
-      if (!img.parentElement) box.prepend(img);
-    };
-    probe.onerror = () => box.classList.remove("has-img");
-    probe.src = src;
+      let img = box.querySelector("img.fig-img");
+      if (!img) {
+        img = document.createElement("img");
+        img.className = "fig-img"; img.alt = "";
+        box.prepend(img);
+      }
+      if (img.getAttribute("src") !== src) img.src = src;
+    });
   });
 }
