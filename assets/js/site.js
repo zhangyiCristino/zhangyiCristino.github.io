@@ -5,6 +5,7 @@ const NAV = [
   ["index.html", "nav_intro"],
   ["research.html", "nav_research"],
   ["publications.html", "nav_pubs"],
+  ["experience.html", "nav_exp"],
   ["connect.html", "nav_connect"],
 ];
 
@@ -34,7 +35,7 @@ const PUBS = [
 
 const I18N = {
   en: {
-    nav_intro: "Intro", nav_research: "Research", nav_pubs: "Publications", nav_connect: "Contact",
+    nav_intro: "Intro", nav_research: "Research", nav_pubs: "Publications", nav_exp: "Experience", nav_connect: "Contact",
     h1: "Yi Zhang",
     affil: "MSc in Smart Manufacturing, HKUST(GZ) · <a href='https://pairslab.github.io/'>PAIRS Lab</a>, Prof. Fangqiang Ding · Shenzhen, China",
     about_h: "About",
@@ -95,22 +96,49 @@ const I18N = {
     fig_own: "Figure supplied by the author.",
     doi_label: "DOI",
 
+    exp_title: "Experience",
+    exp_sub: "Research groups and industry placement",
+    x1_t: "PAIRS Lab · The Hong Kong University of Science and Technology (Guangzhou)",
+    x1_role: "Research assistant, Prof. Fangqiang Ding · Sep 2025 – present",
+    x1_b: [
+      "<b>Real2Sim scene fidelity evaluation.</b> What do robot training and evaluation pipelines actually require from high-fidelity simulated scenes? Separating visual fidelity, geometric consistency and physics consistency, and testing how each affects policy performance.",
+      "<b>Tactile Real2Sim / Tactile SimFoundry.</b> Reconstructing real visual–tactile interaction data into simulatable environments for contact-rich robot manipulation, used for both policy training and evaluation.",
+    ],
+    x2_t: "POE Lab · Guangdong Ocean University",
+    x2_role: "Undergraduate researcher, Prof. Dapeng Zhang · Oct 2022 – Jun 2026",
+    x2_b: [
+      "Dynamic response of offshore structures: hydrodynamic analysis of subsea pipelines and cables by lumped-mass method, CFD and FEM, plus data-driven and machine-learning inversion of marine-engineering forward problems and parameter identification.",
+      "Digital twin architecture for surface unmanned systems: joint development of the dynamics and hydrodynamic modelling framework for an unmanned surface vessel.",
+      "Marine clean energy: dynamic response and economic modelling of offshore wind and wave farms; ocean-current energy harvesting with flexible triboelectric nanogenerators (TENG) for self-powered marine systems.",
+      "Smart marine aquaculture: hydrodynamic analysis of aquaculture facilities and trawl systems, and TENG-based self-powered monitoring for smart farms.",
+      "Offshore rocket launch and recovery: neural networks and neural operators for complex marine system modelling, including deck thermal-effect inversion and splashdown wave-field prediction.",
+    ],
+    x3_t: "Shanghai Naai Laboratory Instrument Co., Ltd.",
+    x3_role: "Assistant R&D Engineer · Jan 2026 – Mar 2026",
+    x3_b: [
+      "Hardware assembly, commissioning and baseline performance testing of new laboratory instruments, supporting engineers through build-up and functional verification.",
+      "Organised R&D documentation and drafted technical documents, test records and experiment reports, standardising how development artefacts are archived.",
+      "Collected and screened test data, checking accuracy and completeness of the records.",
+    ],
+    svc_h: "Academic service",
+    svc: [
+      "Peer reviewer, <i>Journal of Operational Oceanography</i> (SCIE, IF 1.7) — since Apr. 2025",
+      "Peer reviewer, <i>International Journal of Digital Earth</i> (SCIE, IF 4.9) — since Oct. 2025",
+    ],
+
     connect_title: "Contact",
     connect_sub: "Email is the fastest way to reach me.",
-    c_email_h: "Email",
-    c_email_p: "<p><b>HKUST(GZ):</b> yzhang996@connect.hkust-gz.edu.cn<br><b>Secondary:</b> zhangyi19492004@163.com</p>",
+    c_email_h: "Email & phone",
+    c_email_p: "<p><b>HKUST(GZ):</b> yzhang996@connect.hkust-gz.edu.cn<br><b>Secondary:</b> zhangyi19492004@163.com<br><b>Phone:</b> +86 150 1349 1906</p>",
     c_ids_h: "Identifiers & profiles",
     c_ids_p: "<p><a href='https://scholar.google.com/citations?user=YPHhw8gAAAAJ&hl=zh-CN'>Google Scholar</a><br><a href='https://orcid.org/0009-0003-0639-8082'>ORCID</a><br><a href='https://github.com/zhangyiCristino'>GitHub</a><br><a href='https://www.linkedin.com/in/yi-zhang-9376a4316/'>LinkedIn</a><br><a href='https://x.com/Marine_Yi_Zhang'>X · @Marine_Yi_Zhang</a><br><a href='https://www.researchgate.net/profile/Yi-Zhang-950'>ResearchGate</a></p>",
     c_aff_h: "Affiliation",
     c_aff_p: "<p><a href='https://pairslab.github.io/'>PAIRS Lab</a>, Division of Emerging Interdisciplinary Studies<br>The Hong Kong University of Science and Technology (Guangzhou)<br>Qingshuihu Campus, No. 300 Lingshui Road, Nansha, Guangzhou, Guangdong, China</p>",
-    c_rev_h: "Service",
-    c_rev_p: "<p>Peer reviewer, <i>Journal of Operational Oceanography</i> (SCIE, IF 1.7) — since Apr. 2025<br>Peer reviewer, <i>International Journal of Digital Earth</i> (SCIE, IF 4.9) — since Oct. 2025</p>",
-
     footer: "© 2026 Yi Zhang · 张仡",
   },
 
   zh: {
-    nav_intro: "简介", nav_research: "研究", nav_pubs: "论文", nav_connect: "联系",
+    nav_intro: "简介", nav_research: "研究", nav_pubs: "论文", nav_exp: "经历", nav_connect: "联系",
     h1: "Yi Zhang · 张仡",
     affil: "香港科技大学（广州）智能制造理学硕士 · <a href='https://pairslab.github.io/'>PAIRS Lab</a>，丁方强教授 · 广东深圳",
     about_h: "简介",
@@ -171,22 +199,49 @@ const I18N = {
     fig_own: "图片由作者提供。",
     doi_label: "DOI",
 
+    exp_title: "经历",
+    exp_sub: "科研团队与产业实习",
+    x1_t: "PAIRS Lab · 香港科技大学（广州）",
+    x1_role: "科研助理，丁方强教授 · 2025.09 – 至今",
+    x1_b: [
+      "<b>Real2Sim 场景保真度评估。</b>机器人训练与评测过程对高保真仿真场景的实际需求是什么？把视觉保真度、几何一致性与物理一致性拆开，分别检验它们对策略性能的影响。",
+      "<b>触觉 Real2Sim / Tactile SimFoundry。</b>将真实世界视觉–触觉交互数据重建为可仿真的交互环境，用于接触丰富型机器人操作的策略训练与评测。",
+    ],
+    x2_t: "POE Lab · 广东海洋大学",
+    x2_role: "本科生科研，张大朋教授 · 2022.10 – 2026.06",
+    x2_b: [
+      "海洋结构物动力响应分析：开展海底管道与海缆水动力分析，综合采用集中质量法、计算流体力学（CFD）与有限元方法（FEM），并探索基于数据驱动与机器学习方法的海洋工程正问题反演与参数识别。",
+      "水面无人系统数字孪生架构与仿真信息研究：协同开展无人艇动力学与水动力建模，参与构建面向数字孪生的动力学与仿真模型框架。",
+      "海洋清洁能源技术：开展海上风电与波浪能场动力响应及经济性建模，研究基于柔性摩擦纳米发电机（TENG）的海流能采集与海洋自供能系统。",
+      "智慧海洋养殖系统：开展海洋养殖设施及拖网系统水动力分析，探索利用振动能与 TENG 构建自供能智慧养殖系统。",
+      "海上火箭发射与回收相关研究：探索神经网络与神经算子在复杂海洋工程系统建模中的应用，开展甲板热效应反演与火箭溅落波场预测等关键模型研究。",
+    ],
+    x3_t: "上海那艾实验仪器有限公司",
+    x3_role: "研发工程师助理 · 2026.01 – 2026.03",
+    x3_b: [
+      "参与新型实验仪器的硬件装配、调试及基础性能测试，协助工程师完成设备搭建与功能验证。",
+      "参与研发相关材料整理与归档，协助撰写技术文档、测试记录及实验报告，规范研发过程中的技术资料管理。",
+      "负责测试过程中的实验数据采集、记录与初步整理，对测试数据进行基础核查，保障数据记录的准确性与完整性。",
+    ],
+    svc_h: "学术服务",
+    svc: [
+      "《Journal of Operational Oceanography》（SCIE，IF 1.7）审稿人，2025 年 4 月起",
+      "《International Journal of Digital Earth》（SCIE，IF 4.9）审稿人，2025 年 10 月起",
+    ],
+
     connect_title: "联系",
     connect_sub: "邮件是最快的联系方式。",
-    c_email_h: "邮箱",
-    c_email_p: "<p><b>港科大（广州）：</b>yzhang996@connect.hkust-gz.edu.cn<br><b>备用：</b>zhangyi19492004@163.com</p>",
+    c_email_h: "邮箱与电话",
+    c_email_p: "<p><b>港科大（广州）：</b>yzhang996@connect.hkust-gz.edu.cn<br><b>备用：</b>zhangyi19492004@163.com<br><b>电话：</b>+86 150 1349 1906</p>",
     c_ids_h: "学术账号与主页",
     c_ids_p: "<p><a href='https://scholar.google.com/citations?user=YPHhw8gAAAAJ&hl=zh-CN'>Google Scholar</a><br><a href='https://orcid.org/0009-0003-0639-8082'>ORCID</a><br><a href='https://github.com/zhangyiCristino'>GitHub</a><br><a href='https://www.linkedin.com/in/yi-zhang-9376a4316/'>LinkedIn</a><br><a href='https://x.com/Marine_Yi_Zhang'>X · @Marine_Yi_Zhang</a><br><a href='https://www.researchgate.net/profile/Yi-Zhang-950'>ResearchGate</a></p>",
     c_aff_h: "所属机构",
     c_aff_p: "<p><a href='https://pairslab.github.io/'>PAIRS Lab</a>，新兴交叉学科研究部<br>香港科技大学（广州）<br>中国广东省广州市南沙区庆盛水西路 300 号</p>",
-    c_rev_h: "学术服务",
-    c_rev_p: "<p>《Journal of Operational Oceanography》（SCIE，IF 1.7）审稿人，2025 年 4 月起<br>《International Journal of Digital Earth》（SCIE，IF 4.9）审稿人，2025 年 10 月起</p>",
-
     footer: "© 2026 张仡",
   },
 
   "zh-tw": {
-    nav_intro: "簡介", nav_research: "研究", nav_pubs: "論文", nav_connect: "聯絡",
+    nav_intro: "簡介", nav_research: "研究", nav_pubs: "論文", nav_exp: "經歷", nav_connect: "聯絡",
     h1: "Yi Zhang · 張仡",
     affil: "香港科技大學（廣州）智慧製造理學碩士 · <a href='https://pairslab.github.io/'>PAIRS Lab</a>，丁方強教授 · 廣東深圳",
     about_h: "簡介",
@@ -247,17 +302,44 @@ const I18N = {
     fig_own: "圖片由作者提供。",
     doi_label: "DOI",
 
+    exp_title: "經歷",
+    exp_sub: "科研團隊與產業實習",
+    x1_t: "PAIRS Lab · 香港科技大學（廣州）",
+    x1_role: "科研助理，丁方強教授 · 2025.09 – 至今",
+    x1_b: [
+      "<b>Real2Sim 場景保真度評估。</b>機器人訓練與評測過程對高保真模擬場景的實際需求是什麼？把視覺保真度、幾何一致性與物理一致性拆開，分別檢驗它們對策略性能的影響。",
+      "<b>觸覺 Real2Sim / Tactile SimFoundry。</b>將真實世界視覺–觸覺互動資料重建為可模擬的互動環境，用於接觸豐富型機器人操作的策略訓練與評測。",
+    ],
+    x2_t: "POE Lab · 廣東海洋大學",
+    x2_role: "本科生科研，張大朋教授 · 2022.10 – 2026.06",
+    x2_b: [
+      "海洋結構物動力響應分析：開展海底管道與海纜水動力分析，綜合採用集中質量法、計算流體力學（CFD）與有限元素法，並探索基於資料驅動與機器學習方法的海洋工程正問題反演與參數辨識。",
+      "水面無人系統數位孿生架構與模擬資訊研究：協同開展無人艇動力學與水動力建模，參與建構面向數位孿生的動力學與模擬模型框架。",
+      "海洋清潔能源技術：開展海上風電與波浪能場動力響應及經濟性建模，研究基於柔性摩擦奈米發電機（TENG）的海流能蒐集與海洋自供能系統。",
+      "智慧海洋養殖系統：開展海洋養殖設施及拖網系統水動力分析，探索利用振動能與 TENG 建構自供能智慧養殖系統。",
+      "海上火箭發射與回收相關研究：探索神經網路與神經算子在複雜海洋工程系統建模中的應用，開展甲板熱效應反演與火箭濺落波場預測等關鍵模型研究。",
+    ],
+    x3_t: "上海那艾實驗儀器有限公司",
+    x3_role: "研發工程師助理 · 2026.01 – 2026.03",
+    x3_b: [
+      "參與新型實驗儀器的硬體裝配、調試及基礎性能測試，協助工程師完成設備搭建與功能驗證。",
+      "參與研發相關材料整理與歸檔，協助撰寫技術文件、測試記錄及實驗報告，規範研發過程中的技術資料管理。",
+      "負責測試過程中的實驗資料蒐集、記錄與初步整理，對測試資料進行基礎核查，保障資料記錄的準確性與完整性。",
+    ],
+    svc_h: "學術服務",
+    svc: [
+      "《Journal of Operational Oceanography》（SCIE，IF 1.7）審稿人，2025 年 4 月起",
+      "《International Journal of Digital Earth》（SCIE，IF 4.9）審稿人，2025 年 10 月起",
+    ],
+
     connect_title: "聯絡",
     connect_sub: "郵件是最快的聯絡方式。",
-    c_email_h: "信箱",
-    c_email_p: "<p><b>港科大（廣州）：</b>yzhang996@connect.hkust-gz.edu.cn<br><b>備用：</b>zhangyi19492004@163.com</p>",
+    c_email_h: "信箱與電話",
+    c_email_p: "<p><b>港科大（廣州）：</b>yzhang996@connect.hkust-gz.edu.cn<br><b>備用：</b>zhangyi19492004@163.com<br><b>電話：</b>+86 150 1349 1906</p>",
     c_ids_h: "學術帳號與主頁",
     c_ids_p: "<p><a href='https://scholar.google.com/citations?user=YPHhw8gAAAAJ&hl=zh-CN'>Google Scholar</a><br><a href='https://orcid.org/0009-0003-0639-8082'>ORCID</a><br><a href='https://github.com/zhangyiCristino'>GitHub</a><br><a href='https://www.linkedin.com/in/yi-zhang-9376a4316/'>LinkedIn</a><br><a href='https://x.com/Marine_Yi_Zhang'>X · @Marine_Yi_Zhang</a><br><a href='https://www.researchgate.net/profile/Yi-Zhang-950'>ResearchGate</a></p>",
     c_aff_h: "所屬機構",
     c_aff_p: "<p><a href='https://pairslab.github.io/'>PAIRS Lab</a>，新興交叉學科研究部<br>香港科技大學（廣州）<br>中國廣東省廣州市南沙區慶盛水西路 300 號</p>",
-    c_rev_h: "學術服務",
-    c_rev_p: "<p>《Journal of Operational Oceanography》（SCIE，IF 1.7）審稿人，2025 年 4 月起<br>《International Journal of Digital Earth》（SCIE，IF 4.9）審稿人，2025 年 10 月起</p>",
-
     footer: "© 2026 張仡",
   },
 };
@@ -304,7 +386,34 @@ function applyLang(page) {
 
   if (typeof renderPubs === "function" && document.getElementById("pubGroups")) renderPubs(d);
   if (typeof renderAwards === "function" && document.getElementById("awardList")) renderAwards(d);
+  if (typeof renderExperience === "function" && document.getElementById("expList")) renderExperience(d);
   wireFigures(d);
+  wireLogos();
+}
+
+/* Experience page: research groups, industry placement, academic service. */
+function renderExperience(d) {
+  const job = (title, role, bullets) => `
+    <div class="research-block">
+      <h3>${title}</h3>
+      <p class="role">${role}</p>
+      <ul>${bullets.map(b => `<li>${b}</li>`).join("")}</ul>
+    </div>`;
+  document.getElementById("expList").innerHTML =
+    job(d.x1_t, d.x1_role, d.x1_b) +
+    job(d.x2_t, d.x2_role, d.x2_b) +
+    job(d.x3_t, d.x3_role, d.x3_b);
+  document.getElementById("svcList").innerHTML = d.svc.map(s => `<li>${s}</li>`).join("");
+}
+
+/* Institution logos auto-mount from assets/logos/<key>.png when supplied. */
+function wireLogos() {
+  document.querySelectorAll("img[data-logo]").forEach(img => {
+    const src = `assets/logos/${img.dataset.logo}.png`;
+    const probe = new Image();
+    probe.onload = () => { img.src = src; img.style.display = "block"; };
+    probe.src = src;
+  });
 }
 
 /* Publications: titles/venues stay English; only grouping labels localize. */
