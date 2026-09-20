@@ -12,23 +12,23 @@ const NAV = [
 /* Paper titles and venues stay in English across all languages (academic norm).
    fig: DOI slug -> auto-mounts assets/figures/<slug>.png when present. */
 const PUBS = [
-  { t: "Decision-Calibrated Neural Operator Forecasting for Post-Splashdown Recovery under Partial Observability and Physics Mismatch", v: "Engineering Applications of AI", y: "under review", d: "", a: "Dapeng Zhang, Yi Zhang, Sixing Guo, Yuting Li, Kexin Xie, Yuxin Jiang", n: "CAS Q1 top · IF 9", closed: true },
-  { t: "Probabilistic Identification of Transient Thermal Loads on Offshore Rocket Launch Decks Using Physics-Informed Neural Networks and Conditional Flow Matching", v: "Int. Communications in Heat and Mass Transfer", y: "under review", d: "", a: "Dapeng Zhang, Yi Zhang, Sixing Guo, Yuting Li, Kexin Xie, Yuxin Jiang", n: "CAS Q2 · IF 6.2", closed: true },
+  { t: "Decision-Calibrated Neural Operator Forecasting for Post-Splashdown Recovery under Partial Observability and Physics Mismatch", v: "Engineering Applications of AI", y: "under review", d: "", a: "Dapeng Zhang, Yi Zhang, Sixing Guo, Yuting Li, Kexin Xie, Yuxin Jiang", closed: true },
+  { t: "Probabilistic Identification of Transient Thermal Loads on Offshore Rocket Launch Decks Using Physics-Informed Neural Networks and Conditional Flow Matching", v: "Int. Communications in Heat and Mass Transfer", y: "under review", d: "", a: "Dapeng Zhang, Yi Zhang, Sixing Guo, Yuting Li, Kexin Xie, Yuxin Jiang", closed: true },
   { t: "Research on Intelligent Monitoring of Offshore Structure Damage Through the Integration of Multimodal Sensing and Edge Computing", v: "Engineering Proceedings, 12th Int. Electronic Conference on Sensors and Applications", y: "Nov 2025", d: "10.3390/ECSA-12-26605", a: "Keqi Yang, Kefan Yang, Shengqing Zeng, Yi Zhang, Dapeng Zhang*", n: "Scopus-indexed conference" },
-  { t: "From Multi-Field Coupling Behaviors to Self-Powered Monitoring: Triboelectric Nanogenerator Arrays for Deep-Sea Large-Scale Cages", v: "J. Marine Science and Engineering 13(11), 2042", y: "Oct 2025", d: "10.3390/jmse13112042", a: "Kefan Yang, Shengqing Zeng, Keqi Yang, Dapeng Zhang*, Yi Zhang", n: "JCR Q1" },
+  { t: "From Multi-Field Coupling Behaviors to Self-Powered Monitoring: Triboelectric Nanogenerator Arrays for Deep-Sea Large-Scale Cages", v: "J. Marine Science and Engineering 13(11), 2042", y: "Oct 2025", d: "10.3390/jmse13112042", a: "Kefan Yang, Shengqing Zeng, Keqi Yang, Dapeng Zhang*, Yi Zhang", } ,
   { t: "Research on Improving the Efficiency of Aquaculture Using Self-Powered Triboelectric Nanogenerators and Microfluidic Technology", v: "5th International Online Conference on Nanomaterials (poster)", y: "Sep 2025", d: "", a: "Kefan Yang, Yi Zhang, Keqi Yang, Shengqing Zeng, Dapeng Zhang*", n: "poster presentation" },
-  { t: "Optimizing Deployment Processes and Control Strategies for Marine Submerged Buoy System: A Computational Approach", v: "Ocean Engineering 329, 121158", y: "Apr 2025", d: "10.1016/j.oceaneng.2025.121158", a: "Yi Zhang, Bowen Zhao, Dapeng Zhang*, Yining Zhang, Zhengjie Liang, Yifan Xie, Keqiang Zhu", n: "JCR Q1 · IF 5.5", closed: true },
-  { t: "Dynamic Configuration Simulation of Multi-branches Towed Array System", v: "Marine Structures 103, 103819", y: "Apr 2025", d: "10.1016/j.marstruc.2025.103819", a: "Yi Zhang, Dapeng Zhang*, Yifan Xie, Yining Zhang, Zhengjie Liang, Keqiang Zhu, Shutian Zhang", n: "JCR Q1 · IF 5.1", closed: true },
-  { t: "Study on Dynamic Characteristics and Fracture Failure of Rigid Truss Trawl System During Towing Process", v: "J. Marine Science and Engineering 13(3), 586", y: "Mar 2025", d: "10.3390/jmse13030586", a: "Dapeng Zhang, Bowen Zhao*, Yi Zhang, Keqiang Zhu, Jin Yan", n: "JCR Q1" },
-  { t: "Advances in Dynamic Positioning Offshore Platform-Riser Rigid-Flexible Multi-Body Systems", v: "Chinese Journal of Applied Mechanics", y: "Nov 2024", d: "10.1176/j.issn.1000-4939.2025.02.001", a: "Dapeng Zhang, Yong Bai*, Yi Zhang, Jin Yan, Yining Zhang, Zongduo Wu", n: "CSCD · in Chinese · corresponding author is an Academician of the Norwegian Academy of Technical Sciences", closed: true },
-  { t: "Exploring Subsea Dynamics: A Comprehensive Review of Underwater Pipelines and Cables", v: "Physics of Fluids 36, 101301", y: "Oct 2024", d: "10.1063/5.0231898", a: "Dapeng Zhang (Supervisor), Yi Zhang, Bowen Zhao*, Yunsheng Ma, Kaixi Si", n: "JCR Q1 · IF 4.3 · 37 citations · supervisor listed first; author is first student author", closed: true },
-  { t: "A Comprehensive Review of an Underwater Towing Cable Array: Dynamic Characteristics During the Outspread Process", v: "J. Marine Science and Engineering 12(10), 1880", y: "Oct 2024", d: "10.3390/jmse12101880", a: "Dapeng Zhang, Yangyang Luo*, Yi Zhang, Yunsheng Ma, Keqiang Zhu, Shengqin Zeng", n: "JCR Q1 · 4 citations" },
-  { t: "Marine Equipment Siting Using Machine-Learning-Based Ocean Remote Sensing Data: Current Status and Future Prospects", v: "Sustainability 16(20), 8889", y: "Oct 2024", d: "10.3390/su16208889", a: "Dapeng Zhang, Yunsheng Ma, Huilin Zhang*, Yi Zhang", n: "JCR Q2 · 7 citations" },
-  { t: "Numerical Simulation of Hydrodynamics of Ocean-Observation-Used Remotely Operated Vehicle", v: "Frontiers in Marine Science 11, 1357144", y: "Apr 2024", d: "10.3389/fmars.2024.1357144", a: "Dapeng Zhang, Bowen Zhao*, Yi Zhang, Nan Zhou", n: "JCR Q1 · IF 2.2 · 17 citations" },
-  { t: "A Review of Artificial Intelligence-Based Optimization Applications in Traditional Active Maritime Collision Avoidance", v: "Sustainability 15(18), 13384", y: "Sep 2023", d: "10.3390/su151813384", a: "Yi Zhang, Dapeng Zhang*, Haoyu Jiang", n: "JCR Q2 · IF 3.3 · 30 citations" },
-  { t: "Review of Challenges and Opportunities in Turbulence Modeling: A Comparative Analysis of Data-Driven Machine Learning Approaches", v: "J. Marine Science and Engineering 11(7), 1440", y: "Jul 2023", d: "10.3390/jmse11071440", a: "Yi Zhang, Dapeng Zhang*, Haoyu Jiang", n: "JCR Q1 · IF 2.7 · 91 citations" },
-  { t: "A Review of Offshore Wind and Wave Installations in Some Areas with an Eye towards Generating Economic Benefits and Offering Commercial Inspiration", v: "Sustainability 15(10), 8429", y: "May 2023", d: "10.3390/su15108429", a: "Yi Zhang, Dapeng Zhang*, Haoyu Jiang", n: "JCR Q2 · IF 3.3 · 22 citations" },
-  { t: "Influence of Different Static Equilibrium Calculation Methods on the Dynamic Response of Marine Cables during the Releasing Process: Review and a Case Study", v: "J. Marine Science and Engineering 11(4), 764", y: "Mar 2023", d: "10.3390/jmse11040764", a: "Dapeng Zhang, Bowen Zhao*, Jiyuan Sun, Yi Zhang, Keqiang Zhu, Haoyu Jiang", n: "JCR Q1 · 6 citations" },
+  { t: "Optimizing Deployment Processes and Control Strategies for Marine Submerged Buoy System: A Computational Approach", v: "Ocean Engineering 329, 121158", y: "Apr 2025", d: "10.1016/j.oceaneng.2025.121158", a: "Yi Zhang, Bowen Zhao, Dapeng Zhang*, Yining Zhang, Zhengjie Liang, Yifan Xie, Keqiang Zhu", closed: true },
+  { t: "Dynamic Configuration Simulation of Multi-branches Towed Array System", v: "Marine Structures 103, 103819", y: "Apr 2025", d: "10.1016/j.marstruc.2025.103819", a: "Yi Zhang, Dapeng Zhang*, Yifan Xie, Yining Zhang, Zhengjie Liang, Keqiang Zhu, Shutian Zhang", closed: true },
+  { t: "Study on Dynamic Characteristics and Fracture Failure of Rigid Truss Trawl System During Towing Process", v: "J. Marine Science and Engineering 13(3), 586", y: "Mar 2025", d: "10.3390/jmse13030586", a: "Dapeng Zhang, Bowen Zhao*, Yi Zhang, Keqiang Zhu, Jin Yan", } ,
+  { t: "Advances in Dynamic Positioning Offshore Platform-Riser Rigid-Flexible Multi-Body Systems", v: "Chinese Journal of Applied Mechanics", y: "Nov 2024", d: "10.1176/j.issn.1000-4939.2025.02.001", a: "Dapeng Zhang, Yong Bai*, Yi Zhang, Jin Yan, Yining Zhang, Zongduo Wu", n: "In Chinese · corresponding author is an Academician of the Norwegian Academy of Technical Sciences", closed: true },
+  { t: "Exploring Subsea Dynamics: A Comprehensive Review of Underwater Pipelines and Cables", v: "Physics of Fluids 36, 101301", y: "Oct 2024", d: "10.1063/5.0231898", a: "Dapeng Zhang (Supervisor), Yi Zhang, Bowen Zhao*, Yunsheng Ma, Kaixi Si", n: "47 citations · supervisor listed first; author is first student author", closed: true },
+  { t: "A Comprehensive Review of an Underwater Towing Cable Array: Dynamic Characteristics During the Outspread Process", v: "J. Marine Science and Engineering 12(10), 1880", y: "Oct 2024", d: "10.3390/jmse12101880", a: "Dapeng Zhang, Yangyang Luo*, Yi Zhang, Yunsheng Ma, Keqiang Zhu, Shengqin Zeng", } ,
+  { t: "Marine Equipment Siting Using Machine-Learning-Based Ocean Remote Sensing Data: Current Status and Future Prospects", v: "Sustainability 16(20), 8889", y: "Oct 2024", d: "10.3390/su16208889", a: "Dapeng Zhang, Yunsheng Ma, Huilin Zhang*, Yi Zhang", } ,
+  { t: "Numerical Simulation of Hydrodynamics of Ocean-Observation-Used Remotely Operated Vehicle", v: "Frontiers in Marine Science 11, 1357144", y: "Apr 2024", d: "10.3389/fmars.2024.1357144", a: "Dapeng Zhang, Bowen Zhao*, Yi Zhang, Nan Zhou", } ,
+  { t: "A Review of Artificial Intelligence-Based Optimization Applications in Traditional Active Maritime Collision Avoidance", v: "Sustainability 15(18), 13384", y: "Sep 2023", d: "10.3390/su151813384", a: "Yi Zhang, Dapeng Zhang*, Haoyu Jiang", n: "28 citations" },
+  { t: "Review of Challenges and Opportunities in Turbulence Modeling: A Comparative Analysis of Data-Driven Machine Learning Approaches", v: "J. Marine Science and Engineering 11(7), 1440", y: "Jul 2023", d: "10.3390/jmse11071440", a: "Yi Zhang, Dapeng Zhang*, Haoyu Jiang", n: "96 citations" },
+  { t: "A Review of Offshore Wind and Wave Installations in Some Areas with an Eye towards Generating Economic Benefits and Offering Commercial Inspiration", v: "Sustainability 15(10), 8429", y: "May 2023", d: "10.3390/su15108429", a: "Yi Zhang, Dapeng Zhang*, Haoyu Jiang", n: "22 citations" },
+  { t: "Influence of Different Static Equilibrium Calculation Methods on the Dynamic Response of Marine Cables during the Releasing Process: Review and a Case Study", v: "J. Marine Science and Engineering 11(4), 764", y: "Mar 2023", d: "10.3390/jmse11040764", a: "Dapeng Zhang, Bowen Zhao*, Jiyuan Sun, Yi Zhang, Keqiang Zhu, Haoyu Jiang", } ,
 ];
 
 const I18N = {
@@ -41,7 +41,7 @@ const I18N = {
     about_p2: "<p>Before robotics I spent four years in computational ocean engineering at Guangdong Ocean University (<a href='https://pairslab.github.io/'>PAIRS Lab</a> is my present group; POE Lab, Prof. Dapeng Zhang, 2022–2026 was my previous one): CFD, FEM, lumped-mass cable dynamics, neural operators, and PINNs — the toolkit most real2sim pipelines are missing.</p>",
     edu_h: "Education",
     e1_t: "The Hong Kong University of Science and Technology (Guangzhou)",
-    e1_m: "MSc in Smart Manufacturing · Sep 2026 – present",
+    e1_m: "MSc in Smart Manufacturing · Aug 2026 – present",
     e1_p: "<a href='https://pairslab.github.io/'>PAIRS Lab</a> (Prof. Fangqiang Ding). Real2Sim for robot learning.",
     e2_t: "Guangdong Ocean University",
     e2_m: "BEng in Naval Architecture and Ocean Engineering · Sep 2022 – Jun 2026",
@@ -84,7 +84,7 @@ const I18N = {
     r3_fig_hint: "Drop an image at <code>assets/figures/neural-operator.png</code>.",
 
     pubs_title: "Publications",
-    pubs_sub: "17 entries · 15 published (incl. 1 conference poster) · 2 under review · listed newest first",
+    pubs_sub: "17 entries · 15 published (incl. 1 conference poster) · 2 under review · 303 citations, h-index 9 (Google Scholar)",
     pubs_note: "<p>Titles and venues are kept in English in all language versions, following academic convention. Figures are shown only where the published version is open access (CC BY) or where I supply the original artwork; closed-access Elsevier and AIP papers are listed without figures.</p>",
     fig_missing: "Figure not available",
     fig_license: "Figure reproduced from the published article (CC BY 4.0).",
@@ -99,7 +99,7 @@ const I18N = {
       "<b>Real2Sim scene fidelity evaluation.</b> What do robot training and evaluation pipelines actually require from high-fidelity simulated scenes? Separating visual fidelity, geometric consistency and physics consistency, and testing how each affects policy performance.",
       "<b>Tactile Real2Sim / Tactile SimFoundry.</b> Reconstructing real visual–tactile interaction data into simulatable environments for contact-rich robot manipulation, used for both policy training and evaluation.",
     ],
-    x2_t: "POE Lab · Guangdong Ocean University",
+    x2_t: "POE Lab (Poetic Ocean Engineering Team) · Guangdong Ocean University",
     x2_role: "Undergraduate researcher, Prof. Dapeng Zhang · Oct 2022 – Jun 2026",
     x2_b: [
       "Dynamic response of offshore structures: hydrodynamic analysis of subsea pipelines and cables by lumped-mass method, CFD and FEM, plus data-driven and machine-learning inversion of marine-engineering forward problems and parameter identification.",
@@ -117,8 +117,8 @@ const I18N = {
     ],
     svc_h: "Academic service",
     svc: [
-      "Peer reviewer, <i>Journal of Operational Oceanography</i> (SCIE, IF 1.7) — since Apr. 2025",
-      "Peer reviewer, <i>International Journal of Digital Earth</i> (SCIE, IF 4.9) — since Oct. 2025",
+      "Peer reviewer, <i>Journal of Operational Oceanography</i> — since Apr. 2025",
+      "Peer reviewer, <i>International Journal of Digital Earth</i> — since Oct. 2025",
     ],
 
     connect_title: "Contact",
@@ -141,7 +141,7 @@ const I18N = {
     about_p2: "<p>进入机器人领域之前，我在广东海洋大学做了四年计算海洋工程（POE Lab，张大朋教授，2022–2026）：CFD、有限元、集中质量法缆索动力学、神经算子与 PINN。这些正是大多数 real2sim 管线缺失的工具箱。</p>",
     edu_h: "教育经历",
     e1_t: "香港科技大学（广州）",
-    e1_m: "智能制造理学硕士 · 2026.09 – 至今",
+    e1_m: "智能制造理学硕士 · 2026.08 – 至今",
     e1_p: "<a href='https://pairslab.github.io/'>PAIRS Lab</a>（丁方强教授）。方向：面向机器人学习的 Real2Sim。",
     e2_t: "广东海洋大学",
     e2_m: "船舶与海洋工程工学学士 · 2022.09 – 2026.06",
@@ -184,7 +184,7 @@ const I18N = {
     r3_fig_hint: "把图片放到 <code>assets/figures/neural-operator.png</code>。",
 
     pubs_title: "论文",
-    pubs_sub: "共 17 条 · 已发表 15 篇（含 1 篇会议海报）· 在投 2 篇 · 按时间倒序",
+    pubs_sub: "共 17 条 · 已发表 15 篇（含 1 篇会议海报）· 在投 2 篇 · Google Scholar 总被引 303，h-index 9",
     pubs_note: "<p>论文标题与期刊在三种语言版本中统一保留英文，遵循学术惯例。仅在正式版为开放获取（CC BY）或由我提供原图时配图；Elsevier 与 AIP 的闭源论文不配图。</p>",
     fig_missing: "暂无配图",
     fig_license: "图片引自已发表论文（CC BY 4.0）。",
@@ -199,7 +199,7 @@ const I18N = {
       "<b>Real2Sim 场景保真度评估。</b>机器人训练与评测过程对高保真仿真场景的实际需求是什么？把视觉保真度、几何一致性与物理一致性拆开，分别检验它们对策略性能的影响。",
       "<b>触觉 Real2Sim / Tactile SimFoundry。</b>将真实世界视觉–触觉交互数据重建为可仿真的交互环境，用于接触丰富型机器人操作的策略训练与评测。",
     ],
-    x2_t: "POE Lab · 广东海洋大学",
+    x2_t: "诗画海洋工程实验室（POE Lab） · 广东海洋大学",
     x2_role: "本科生科研，张大朋教授 · 2022.10 – 2026.06",
     x2_b: [
       "海洋结构物动力响应分析：开展海底管道与海缆水动力分析，综合采用集中质量法、计算流体力学（CFD）与有限元方法（FEM），并探索基于数据驱动与机器学习方法的海洋工程正问题反演与参数识别。",
@@ -217,8 +217,8 @@ const I18N = {
     ],
     svc_h: "学术服务",
     svc: [
-      "《Journal of Operational Oceanography》（SCIE，IF 1.7）审稿人，2025 年 4 月起",
-      "《International Journal of Digital Earth》（SCIE，IF 4.9）审稿人，2025 年 10 月起",
+      "《Journal of Operational Oceanography》审稿人，2025 年 4 月起",
+      "《International Journal of Digital Earth》审稿人，2025 年 10 月起",
     ],
 
     connect_title: "联系",
@@ -241,7 +241,7 @@ const I18N = {
     about_p2: "<p>進入機器人領域之前，我在廣東海洋大學做了四年計算海洋工程（POE Lab，張大朋教授，2022–2026）：CFD、有限元素法、集中質量法纜索動力學、神經算子與 PINN。這些正是大多數 real2sim 管線缺失的工具箱。</p>",
     edu_h: "教育經歷",
     e1_t: "香港科技大學（廣州）",
-    e1_m: "智慧製造理學碩士 · 2026.09 – 至今",
+    e1_m: "智慧製造理學碩士 · 2026.08 – 至今",
     e1_p: "<a href='https://pairslab.github.io/'>PAIRS Lab</a>（丁方強教授）。方向：面向機器人學習的 Real2Sim。",
     e2_t: "廣東海洋大學",
     e2_m: "船舶與海洋工程工學學士 · 2022.09 – 2026.06",
@@ -284,7 +284,7 @@ const I18N = {
     r3_fig_hint: "把圖片放到 <code>assets/figures/neural-operator.png</code>。",
 
     pubs_title: "論文",
-    pubs_sub: "共 17 條 · 已發表 15 篇（含 1 篇會議海報）· 在投 2 篇 · 按時間倒序",
+    pubs_sub: "共 17 條 · 已發表 15 篇（含 1 篇會議海報）· 在投 2 篇 · Google Scholar 總被引 303，h-index 9",
     pubs_note: "<p>論文標題與期刊在三種語言版本中統一保留英文，遵循學術慣例。僅在正式版為開放獲取（CC BY）或由我提供原圖時配圖；Elsevier 與 AIP 的封閉式論文不配圖。</p>",
     fig_missing: "暫無配圖",
     fig_license: "圖片引自已發表論文（CC BY 4.0）。",
@@ -299,7 +299,7 @@ const I18N = {
       "<b>Real2Sim 場景保真度評估。</b>機器人訓練與評測過程對高保真模擬場景的實際需求是什麼？把視覺保真度、幾何一致性與物理一致性拆開，分別檢驗它們對策略性能的影響。",
       "<b>觸覺 Real2Sim / Tactile SimFoundry。</b>將真實世界視覺–觸覺互動資料重建為可模擬的互動環境，用於接觸豐富型機器人操作的策略訓練與評測。",
     ],
-    x2_t: "POE Lab · 廣東海洋大學",
+    x2_t: "詩畫海洋工程實驗室（POE Lab） · 廣東海洋大學",
     x2_role: "本科生科研，張大朋教授 · 2022.10 – 2026.06",
     x2_b: [
       "海洋結構物動力響應分析：開展海底管道與海纜水動力分析，綜合採用集中質量法、計算流體力學（CFD）與有限元素法，並探索基於資料驅動與機器學習方法的海洋工程正問題反演與參數辨識。",
@@ -317,8 +317,8 @@ const I18N = {
     ],
     svc_h: "學術服務",
     svc: [
-      "《Journal of Operational Oceanography》（SCIE，IF 1.7）審稿人，2025 年 4 月起",
-      "《International Journal of Digital Earth》（SCIE，IF 4.9）審稿人，2025 年 10 月起",
+      "《Journal of Operational Oceanography》審稿人，2025 年 4 月起",
+      "《International Journal of Digital Earth》審稿人，2025 年 10 月起",
     ],
 
     connect_title: "聯絡",
